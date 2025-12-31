@@ -1,0 +1,114 @@
+@font-face {
+  font-family: Wallington;
+  src: url('assets/fonts/Wallington-Regular.ttf');
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Wallington;
+}
+
+body {
+  background:black;
+  overflow:hidden;
+}
+
+#slideshow {
+  position:fixed;
+  width:100%;
+  height:100%;
+}
+
+.slide {
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity 1.2s ease;
+}
+
+.slide.active { opacity:1; }
+
+#countdown-section {
+  position:absolute;
+  width:100%;
+  top:40%;
+  text-align:center;
+  color:white;
+}
+
+.timer {
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:20px;
+}
+
+.box {
+  background:#E2725B;
+  padding:20px 25px;
+  font-size:32px;
+  color:black;
+}
+
+.hidden { display:none; }
+
+#celebration {
+  position:absolute;
+  top:35%;
+  width:100%;
+  text-align:center;
+  color:peachpuff;
+}
+
+#letter-section {
+  position:absolute;
+  width:100%;
+  height:100%;
+  backdrop-filter:blur(6px);
+  background:rgba(0,0,0,0.5);
+}
+
+#letter {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:80%;
+}
+
+#letter img {
+  width:100%;
+}
+
+#letter-text {
+  position:absolute;
+  top:15%;
+  left:10%;
+  right:10%;
+  bottom:15%;
+  font-family:cursive;
+  overflow-y:auto;
+}
+
+.tap {
+  position:absolute;
+  bottom:20px;
+  width:100%;
+  text-align:center;
+  color:white;
+}
+
+#question, #final-msg, #voice {
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#CBA32B;
+}
